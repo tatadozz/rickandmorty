@@ -17,7 +17,7 @@ const CardItem = (props: Props) => {
   return (
     <Card style={styles.card}>
         <Card.Cover source={{uri: item.image}} />
-        <Card.Title title={item.name} />
+        <Card.Title titleStyle={{color: "#7cbc4e"}} title={item.name} />
     </Card>
   );
 };
@@ -26,6 +26,8 @@ export default CardItem;
 
 const styles = StyleSheet.create({
     card: {
-        minHeight: 100
+        margin: 20,
+        minHeight: 100,
+        backgroundColor: "#333333"
     }
 });

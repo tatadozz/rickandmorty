@@ -3,6 +3,7 @@ import React from 'react';
 import { ActivityIndicator, Button, Colors } from 'react-native-paper';
 import { useCharacters } from '../hooks/useCharacters';
 import CardItem from '../components/CardItem';
+import HeadTitle from '../components/HeadTitle';
 
 type Props = {};
 
@@ -11,7 +12,7 @@ const CharactersScreen = ({}) => {
   if (isLoading) {
     return (
         <SafeAreaView>
-            <Text>⌛️ Loading</Text>
+            <HeadTitle title={"⌛️ Loading"}/>
             <ActivityIndicator />
         </SafeAreaView >
     )
@@ -19,7 +20,7 @@ const CharactersScreen = ({}) => {
   if (isError) {
       return (
           <SafeAreaView>
-              <Text>😢 Error</Text>
+              <HeadTitle title={"😢 Error"}/>
               <Button onPress={refetch}>refetch</Button>
           </SafeAreaView>
       )
@@ -31,6 +32,7 @@ const CharactersScreen = ({}) => {
 
   return (
     <SafeAreaView style={styles.safeContainer}>
+      <HeadTitle title={"Characters"}/>
       <FlatList
         data={data.results}
         renderItem={renderItem}
@@ -44,7 +46,7 @@ const styles = StyleSheet.create({
   safeContainer: {
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
-    backgroundColor: Colors.blueGrey100
+    backgroundColor: "#1e1e1e"
   }
 });
 
