@@ -3,7 +3,11 @@ import React from 'react';
 import { Button } from 'react-native-paper';
 import { Routes } from '../navigation/Routes';
 
-const MainScreen = ({navigation}) => {
+interface MainScreenProps {
+    navigation: any
+}
+
+const MainScreen = ({navigation}:MainScreenProps) => {
   return (
     <View>
         <ImageBackground style={styles.bg} source={require('../../assets/bg.jpg')}>

@@ -7,9 +7,7 @@ import CardItem from '../components/CardItem';
 type Props = {};
 
 const CharactersScreen = ({}) => {
-
   const { isLoading, isError, data, refetch } = useCharacters();
-
   if (isLoading) {
     return (
         <SafeAreaView>
@@ -42,8 +40,6 @@ const CharactersScreen = ({}) => {
   );
 };
 
-export default CharactersScreen;
-
 const styles = StyleSheet.create({
   safeContainer: {
     flex: 1,
@@ -51,3 +47,5 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.blueGrey100
   }
 });
+
+export default CharactersScreen;

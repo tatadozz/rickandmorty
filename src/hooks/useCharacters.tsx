@@ -7,5 +7,5 @@ async function fetchData() {
 }
 
 export function useCharacters() {
-    return useQuery(["id"], fetchData);
+    return useQuery(["characters"], fetchData);
 }
