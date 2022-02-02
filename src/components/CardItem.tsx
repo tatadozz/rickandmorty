@@ -10,10 +10,8 @@ interface Props {
     }
 };
 
-const navigation = useNavigation()
-
 const CardItem = (props: Props) => {
-
+    const navigation = useNavigation()
     const {item} = props
 
   return (
@@ -28,7 +26,6 @@ export default CardItem;
 
 const styles = StyleSheet.create({
     card: {
-        width: 100,
         minHeight: 100
     }
 });

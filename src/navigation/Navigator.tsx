@@ -16,10 +16,10 @@ const Navigators = () => {
       <Stack.Navigator screenOptions={{
             headerShown: false
         }}>
-        <Stack.Screen name={Routes.MAIN_SCREEN} component={MainScreen} />
+         <Stack.Screen name={Routes.MAIN_SCREEN} component={MainScreen} />
          <Stack.Screen name={Routes.CHARACTERS_SCREEN} component={CharactersScreen} />
-         {/*<Stack.Screen name={Routes.LOCATIONS_SCREEN} component={LocationsScreen} />
-        <Stack.Screen name={Routes.EPISODES_SCREEN} component={EpisodesScreen} />  */}
+         <Stack.Screen name={Routes.LOCATIONS_SCREEN} component={LocationsScreen} />
+        <Stack.Screen name={Routes.EPISODES_SCREEN} component={EpisodesScreen} /> 
       </Stack.Navigator>
     </NavigationContainer>
   );
