@@ -9,12 +9,6 @@ type Props = {
 const HeadTitle = (props: Props) => {
     return (
         <View style={styles.row}>
-            <IconButton
-                icon="arrow-left-thick"
-                color={"#7cbc4e"}
-                size={34}
-                onPress={() => console.log('Pressed')}
-            />
             <Text style={styles.title}>{props.title}</Text>
         </View>
     );
