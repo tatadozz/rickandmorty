@@ -1,14 +1,29 @@
-## Student project w/ Rick & Morty free API
+# rickandmorty
 
-## Published on Expo 
+rickandmorty is a react-native project app realized in bootcamp by @flexbox. The project use the folowing api : https://rickandmortyapi.com/
 
-Let's try here : https://expo.dev/@tatadozz/rickandmorty
+## Getting started
 
-## How to launch
+Need npm and expo.
 
-npm i
+```bash
+npm -i
+```
+```bash
 expo start
+```
 
-## Link of API
+## App & improvements
 
-https://rickandmortyapi.com/api/
+There is 3 parts of the app : Characters, Locations and Episodes.
+
+Improvements : 
+
+- fetch to others index of API
+- add the possibility to add characters to a "personnal collection" and add episodes to a collection "I have seen".
+
+## Contributing
+Pull requests are welcome.
+
+## License
+FREE TO USE. The project is yours :)
